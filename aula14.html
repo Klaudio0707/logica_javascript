@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     body{ background-color: black; color:aqua;};  
+     
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="somar()">+</button> 
+   <button onclick="subtracao()">-</button>
+   <button onclick="divisao()">/</button>
+   <button onclick="multiplicacao()">*</button>
+<div id="output"></div>
+<script>
+  
+
+function somar() {
+  let valor1 = parseFloat(prompt("informe um valor a ser calculado"));
+  let valor2 = parseFloat(prompt("informe um segundo valor a ser calculado"));
+  let output = document.querySelector("#output");
+  let mensagem = "O resultado é " + (valor1 + valor2);
+
+ output.innerHTML = mensagem;
+
+}    
+
+function subtracao() {
+  let valor1 = parseFloat(prompt("informe um valor a ser calculado"));
+  let valor2 = parseFloat(prompt("informe um segundo valor a ser calculado"));
+  let output = document.querySelector("#output");
+  let mensagem = "O resultado é " + (valor1 - valor2);
+
+ output.innerHTML = mensagem;
+
+} 
+function divisao() {
+  let valor1 = parseFloat(prompt("informe um valor a ser calculado"));
+  let valor2 = parseFloat(prompt("informe um segundo valor a ser calculado"));
+  let output = document.querySelector("#output");
+  let mensagem = "O resultado é " + (valor1 / valor2);
+
+ output.innerHTML = mensagem;
+
+} 
+function multiplicacao() {
+  let valor1 = parseFloat(prompt("informe um valor a ser calculado"));
+  let valor2 = parseFloat(prompt("informe um segundo valor a ser calculado"));
+  let output = document.querySelector("#output");
+  let mensagem = "O resultado é " + (valor1 * valor2);
+
+ output.innerHTML = mensagem;
+
+}
+</script>
+
+</body>
+</html>

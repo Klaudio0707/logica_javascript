@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Lógica de programação com javascript</h1> 
+ <script>
+    alert("Informe a seguir dois valores para serem calculados");
+  let valueUsuario1 = prompt("Digite um valor");
+  let parsedValue1 = parseInt(valueUsuario1);
+
+  let valueUsuario2 = prompt("Digite um segundo valor");
+  let parsedValue2 = parseInt(valueUsuario2);
+
+let somValue = parsedValue1 + parsedValue2;
+let subValue = parsedValue1 - parsedValue2;
+let divValue = parsedValue1 / parsedValue2;
+let multValue = parsedValue1 * parsedValue2;
+
+let resultado = document.createElement("div");
+
+resultado.innerHTML = `
+O resultado da soma é: ${somValue} <br>
+O resultado da subtração é: ${subValue} <br>
+O resultado da divisão é: ${divValue}<br>
+O resultado da multiplicação é: ${multValue}
+
+
+`
+document.body.appendChild(resultado);
+
+ </script>   
+</body>
+</html>

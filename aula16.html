@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     body{ background-color: black; color:aqua;};  
+     
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="somar()">+</button> 
+   <button onclick="subtracao()">-</button>
+   <button onclick="divisao()">/</button>
+   <button onclick="multiplicacao()">*</button>
+<div id="output"></div>
+<script>
+  
+
+let valor = parseFloat(prompt("informe um valor"));
+
+let mensagem = "O resultado é " + valor;
+output.innerHTML = mensagem;
+
+function escrever() {
+let output = document.querySelector("#output");
+let mensagem = "O resultado é " + valor;
+
+output.innerHTML = mensagem;
+ 
+ }
+
+function somar() {
+
+let soma = parseFloat(prompt("informe um valor para somar"));
+
+valor = valor + soma;
+
+
+
+  escrever(valor);  
+}
+function subtracao() {
+
+let sub = parseFloat(prompt("informe um valor para somar"));
+
+valor = valor - sub;
+
+
+
+  escrever(valor);  
+}
+
+function divisao() {
+
+let div = parseFloat(prompt("informe um valor para somar"));
+
+valor = valor / div;
+
+
+
+  escrever(valor);  
+}
+
+function multiplicacao() {
+
+let mult = parseFloat(prompt("informe um valor para somar"));
+
+valor = valor * mult;
+
+
+
+  escrever(valor);  
+}
+
+
+
+  
+
+
+</script>
+
+</body>
+</html>

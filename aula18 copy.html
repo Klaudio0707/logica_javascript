@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     body{ background-color: black; color:aqua;};  
+     
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="calcular('+')">+</button> 
+   <button onclick="calcular('-')">-</button>
+   <button onclick="calcular('/')">/</button>
+   <button onclick="calcular('*')">*</button>
+<div id="output"></div>
+
+<script>
+  
+
+let valor1 = parseFloat(prompt("informe um valor"));
+
+escrever();
+
+function escrever() {
+let output = document.querySelector("#output");
+let mensagem = "O resultado é " + valor1;
+
+output.innerHTML = mensagem;
+
+
+ }
+ function calcular(simbolo) {
+let valor2 = parseFloat(prompt("digite um segundo valor"));
+//valor1 += valor2;
+
+
+
+  switch(simbolo) {
+    case '+':
+      valor1 += valor2;
+      break;
+  
+    case '-':
+      valor1 -= valor2;
+      break;
+
+      case '*':
+        valor1 *= valor2;
+        break;
+
+      case '/':
+        valor1 /= valor2;
+
+  }
+  escrever();
+ }
+
+
+
+/*
+function somar() {
+
+let soma = parseFloat(prompt("informe um valor para somar"));
+
+valor = valor + soma;
+
+
+
+  escrever(valor);  
+}
+
+
+*/
+  
+
+
+</script>
+
+</body>
+</html>

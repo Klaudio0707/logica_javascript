@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Lógica de programação com javascript</h1> 
+   button*
+   <style>
+   body{ 
+    background-color: black;
+   }
+   </style>
+ <script>
+  // == é igualdade (valor)
+  // != diferente (valor)
+  // === é igual (valor e tipo)
+  //!== Diferente (valor e tipo)
+  // > Maior
+  // >= Maior ou igual
+  // < Menor
+  // <= Menor ou igual
+
+  let playOne = parseInt(prompt("Jogador 1, digite o primeiro numero: "));
+
+  let playTwo = parseInt(prompt("Jogador 2, digite o  segundo numero: "));
+  
+
+
+if (playOne === playTwo) {
+alert("emparte");
+}else{
+let sorteado = parseInt(Math.random() * 2);
+
+if(sorteado === 0 ){
+
+if(playOne < playTwo){
+alert("ganhou o jogador 1");
+alert(sorteado);
+}else{
+  alert("jogador 2 ganhou");
+  alert(sorteado);
+}
+
+
+}else{
+  if(playOne > playTwo){
+    alert("jogador 1 Ganhou")
+  }else{
+    alert("jogador 2 Ganhou")
+    alert(sorteado);
+  }
+
+}
+
+}
+
+/*
+if (sorte) {
+alert(playOne === playTwo +"emparte"); 
+let sorteio = (parseInt.Math.random() * 2);
+
+}else{
+alert("você ganhou");
+
+}
+
+  */
+
+
+ </script>   
+</body>
+</html>

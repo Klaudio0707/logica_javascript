@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="icon-" href="">
+    <title>Document</title>
+    <style>
+      body{ 
+       background-color: black;
+       color: #ffff;
+
+      }
+      </style>
+</head>
+<body>
+   <h1>Lógica de programação com javascript</h1>
+
+ 
+ <script>
+  // == é igualdade (valor)
+  // != diferente (valor)
+  // === é igual (valor e tipo)
+  //!== Diferente (valor e tipo)
+  // > Maior
+  // >= Maior ou igual
+  // < Menor
+  // <= Menor ou igual
+// ! Não
+//&& e And
+// || Ou
+
+let numero = parseFloat(prompt("Digite um valor"));
+
+let indice = 1;
+let resultado;
+while(indice <= 1000){
+ resultado = numero * indice;
+let print = document.createElement("div");
+print.innerHTML = `${numero} x ${indice} = ${resultado} `;
+
+document.body.appendChild(print);
+indice ++;
+if (indice % 10 === 0 ){
+  let linha = document.createElement("hr");
+linha.innerHTML = ` `;
+
+document.body.appendChild(linha);
+}
+
+}
+
+// while(indice <= 1000){
+//             resultado = numero * indice;
+//             let print = document.createElement("div");
+//             print.innerHTML = `${numero} x ${indice} = ${resultado} `;
+//             document.body.appendChild(print);
+//             indice++;
+//         }
+ </script>   
+</body>
+</html>

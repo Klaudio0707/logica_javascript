@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     body{ background-color: rgb(10, 10, 10); color: aqua;};  
+     
+    #retangulo{
+      line-height:0;
+ width:30px;
+ height:0;
+ border-style: solid;
+ border-color: #f00 #0f0 #00f #fc0;
+ border-width: 10px 35px 90px;
+ };
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="mostrarArea(largura, altura)">Mostrar Área</button> 
+  
+
+<div id="retangulo"></div>
+
+<script>
+  // == é igualdade (valor)
+  // != diferente (valor)
+  // === é igual (valor e tipo)
+  //!== Diferente (valor e tipo)
+  // > Maior
+  // >= Maior ou igual
+  // < Menor
+  // <= Menor ou igual
+// ! Não
+//&& e And
+alert("Retangulo"); 
+let largura = parseFloat(prompt("informe a altura"));
+let altura = parseFloat(prompt("informe a largura"));
+
+
+function mostrarArea(l,a) {
+let total = largura * altura;
+
+  
+
+let mensagem = document.createElement("Div");
+mensagem.innerHTML = "Largura: " + l + "cm altura:  " + a + "cm -  Total da Área: "+ total + "cm";
+
+document.body.appendChild(mensagem);
+ 
+}
+
+
+
+
+  
+
+
+</script>
+
+</body>
+</html>
