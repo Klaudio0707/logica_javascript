@@ -17,6 +17,16 @@
 <div id="output"></div>
 
 <script>
+   // == é igualdade (valor)
+  // != diferente (valor)
+  // === é igual (valor e tipo)
+  //!== Diferente (valor e tipo)
+  // > Maior
+  // >= Maior ou igual
+  // < Menor
+  // <= Menor ou igual
+// ! Não
+//&& e And
   
 
 let valor1 = parseFloat(prompt("informe um valor"));
@@ -25,7 +35,7 @@ escrever();
 
 function escrever() {
 let output = document.querySelector("#output");
-let mensagem = "O resultado é " + valor1;
+let mensagem = "O resultado é " + valor1.toFixed(2);
 
 output.innerHTML = mensagem;
 
